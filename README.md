@@ -3,9 +3,13 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-## 中文说明
+## このデッキについて
 
-本仓库基于 [moltinginstar/japanese-compound-verbs](https://github.com/moltinginstar/japanese-compound-verbs)（作者 moltinginstar）。在此基础上，`data/deck.csv` 新增了 `meaning_zh` 列，为全部 2,759 个复合动词提供了简体中文释义：每个义项与每条例句均有中译，HTML 结构与英文列 `meaning_en` 保持一致（英文含糊处对照日文列校订）。构建代码也已同步接入该列：`Record` 类型新增 `meaning_zh` 字段，Anki note model 新增 “Meaning (Chinese)” 字段并显示在卡片背面。本仓库遵循原项目的 GPL-3.0 许可证（见 LICENSE 文件）。
+複合動詞って、正直いちばん厄介だと思うんですよね。「入れる」と「込む」がくっついただけなのに意味は全然別物だったりして、辞書を引いてもピンとこないことが多いんです。
+
+元のデッキ（moltinginstar さんの japanese-compound-verbs）は説明が英語メインで、中国語話者にはあんまり優しくなかったので、全 2,759 語に中国語の訳を付けました。訳は英語経由じゃなく、日本語の原文と見比べて作ってあります。英語の訳自体がちょっと怪しいところも何十件かあって、そういうのは原文に合わせて直しました。
+
+Anki のカード背面にも「Meaning (Chinese)」としてそのまま出るようにしてあります。ライセンスは元のプロジェクトと同じ GPL-3.0 です。
 
 This repo contains the data and code to build the [Japanese Compound Verbs](https://ankiweb.net/shared/info/921752699) deck, a comprehensive list of over 2700 compound verbs in Japanese, complete with parallel definitions, usage notes, and example sentences in Japanese, English, and Korean.
 
